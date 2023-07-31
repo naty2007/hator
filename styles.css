@@ -1,0 +1,153 @@
+body {
+    background: linear-gradient(to right, #AAAAAA, #FFFFFF);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+}
+
+.hathor {
+    font-size: 40px;
+    color: black;
+}
+
+.fashion {
+    display: block;
+    font-size: 24px;
+}
+
+.banner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.banner img {
+    max-width: 50%;
+    height: 350px;
+}
+
+.moda-texto {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.circle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.circle img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu-hamburger {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.sidebar {
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    height: 100%;
+    background-color: #333;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: left 0.3s;
+    z-index: 1;
+}
+
+.sidebar-open {
+    left: 0;
+
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #FFF;
+    cursor: pointer;
+    
+}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #555;
+}
+
+.sidebar a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .menu-hamburger {
+        padding: 5px;
+    }
+
+    .sidebar {
+        padding-top: 40px;
+    }
+
+    .sidebar ul {
+        text-align: center;
+    }
+
+    .sidebar li {
+        padding: 10px 0;
+        border-bottom: 1px solid #555;
+    }
+
+    .close-button {
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+    }
+
+    .sidebar-open {
+        left: 0;
+    }
+}
